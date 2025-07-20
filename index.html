@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to bottom, #87CEEB, #98FB98);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        h1 {
+            color: #FF6B35;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+        
+        #gameCanvas {
+            border: 3px solid #8B4513;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            background: #87CEEB;
+        }
+        
+        .controls {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+            background: rgba(255,255,255,0.8);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .controls h3 {
+            margin: 0 0 10px 0;
+            color: #FF6B35;
+        }
+        
+        .controls p {
+            margin: 5px 0;
+        }
+        
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF6B35;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🍄 Super Mario Game 🍄</h1>
+    <div class="score">Score: <span id="score">0</span></div>
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+    
+    <div class="controls">
+        <h3>🎮 Controls</h3>
+        <p><strong>Arrow Keys:</strong> Move Mario</p>
+        <p><strong>Spacebar:</strong> Jump</p>
+        <p><strong>R:</strong> Restart Game</p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html> 
