@@ -58,8 +58,14 @@
 </head>
 <body>
     <h1>🍄 Super Mario Game 🍄</h1>
-    <div class="score">Score: <span id="score">0</span></div>
+    <div class="score">
+        Score: <span id="score">0</span> |
+        Level: <span id="level">1</span> |
+        Lives: <span id="lives">3</span> |
+        Flowers: <span id="flowers">0</span>
+    </div>
     <canvas id="gameCanvas" width="800" height="400"></canvas>
+    <div id="princess-message" style="display:none; font-size: 2em; color: #FF69B4; margin: 20px 0; text-align: center;"></div>
     
     <div class="controls">
         <h3>🎮 Controls</h3>
